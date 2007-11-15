@@ -238,17 +238,8 @@ public class ExporterGenerator extends Generator {
 	 * 
 	 * public IFace1Stub(JavaScriptObject jso) { this.jso = jso; }
 	 * 
-	 * public native IFace2 method1(String arg0, IFace1 arg1, IFace2 arg2) /*-{
-	 * arg1 =
-	 * 
-	 * @com.zoomino.rt.test.client.MyExportable::doExport(Lcom/zoomino/rt/test/client/IFace1;)(arg1); arg2 =
-	 * @com.zoomino.rt.test.client.MyExportable::doExport(Lcom/zoomino/rt/test/client/IFace2;)(arg2); var
-	 *                                                                                                ret =
-	 *                                                                                                this.@com.zoomino.rt.test.client.MyExportable.IFace1Stub::jso.method1(arg0,arg1,arg2);
-	 *                                                                                                ret =
-	 * @com.zoomino.rt.test.client.MyExportable::doImportIFace2(Lcom/google/gwt/core/client/JavaScriptObject;)(ret); return
-	 *                                                                                                               ret;
-	 *                                                                                                               }-* /; }
+	 * public native IFace2 method1(String arg0, IFace1 arg1, IFace2 arg2)
+	 * }                                                                                                             }-* /; }
 	 */
 	private void generateDoDelega(SourceWriter sw, JClassType exClass,
 			boolean isNeedFindService) {
